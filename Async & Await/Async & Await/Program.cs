@@ -3,13 +3,11 @@ using System.Threading.Tasks;
 
 class Program
 {
-    // Hàm giả lập delay
     private static async Task Delay(int ms)
     {
         await Task.Delay(ms);
     }
 
-    // Các hàm tính toán async
     private static async Task<double> Cong(double a, double b)
     {
         await Delay(1000);
@@ -35,7 +33,6 @@ class Program
         return a / b;
     }
 
-    // Hàm chính
     static async Task Main(string[] args)
     {
         try
